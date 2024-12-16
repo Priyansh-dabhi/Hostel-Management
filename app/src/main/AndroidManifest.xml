@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HostelManagementNew"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin_insert_staff"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_stafff_management"
+            android:exported="false" />
+        <activity
+            android:name=".Staff_Mess_Attendance"
+            android:exported="false" />
+        <activity
+            android:name=".Staff_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Staff_student_inout"
+            android:exported="false" />
+        <activity
+            android:name=".Student_Mess_Attendance"
+            android:exported="false" />
+        <activity
+            android:name=".student_inAnd_out"
+            android:exported="false" />
+        <activity
+            android:name=".HelpAndSupport"
+            android:exported="false" />
+        <activity
+            android:name=".Hostel_Rules"
+            android:exported="false" />
+        <activity
+            android:name=".Student_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_home"
+            android:exported="false" />
+        <activity
+            android:name=".Staff_home"
+            android:exported="false" />
+        <activity
+            android:name=".Student_home"
+            android:exported="false" />
+        <activity
+            android:name=".Student_register"
+            android:exported="false" />
+        <activity
+            android:name=".Student_login"
+            android:exported="false" />
+        <activity
+            android:name=".Staff_login"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_login"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

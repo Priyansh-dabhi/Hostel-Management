@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpAndSupport">
+
+    <!-- res/layout/activity_help_support.xml -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#f4f4f4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/help_support_title"
+                android:layout_width="358dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingBottom="16dp"
+                android:text="Help &amp; Support"
+                android:textAlignment="center"
+                android:textColor="#4A148C"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <!-- Frequently Asked Questions Section -->
+            <TextView
+                android:id="@+id/faq_title"
+                android:layout_width="320dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:text="Frequently Asked Questions"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="4dp"
+                android:paddingBottom="16dp"
+                android:text="Find answers to common questions here."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Example FAQ Item -->
+            <TextView
+                android:id="@+id/faq_question_1"
+                android:layout_width="331dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:text="1. How do I reset my password?"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq_answer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="93dp"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="4dp"
+                android:text="To reset your password, go to Settings > Account > Reset Password."
+                android:textColor="#757575"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Contact Information Section -->
+            <TextView
+                android:id="@+id/contact_title"
+                android:layout_width="222dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:text="Contact Us"
+                android:textColor="#212121"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contact_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:text="Phone: +1-800-123-4567"
+                android:textColor="#757575"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contact_email"
+                android:layout_width="344dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:autoLink="email"
+                android:fontFamily="monospace"
+                android:text="Email: support@example.com"
+                android:textColor="#757575"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Support Options Section -->
+            <TextView
+                android:id="@+id/support_options_title"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Support Options"
+                android:textAlignment="center"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_call_support"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#673AB7"
+                android:fontFamily="monospace"
+                android:text="Call Support"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_email_support"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#673AB7"
+                android:fontFamily="monospace"
+                android:text="Email Support"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#673AB7"
+                android:fontFamily="monospace"
+                android:text="Send Feedback"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- Footer Note -->
+            <TextView
+                android:id="@+id/footer_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="We're here to help! Feel free to reach out with any questions or concerns."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

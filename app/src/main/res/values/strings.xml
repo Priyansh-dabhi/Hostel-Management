@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Hostel</string>
+    <string name="send_data">Send</string>
+    <string name="receive_data">Receive</string>
+    <string name="delete_data">Delete</string>
+    <string name="admin_btn">Admin</string>
+    <string name="staff_btn">Staff</string>
+    <string name="student_btn">Student</string>
+    <string name="signin_btn">Sign in</string>
+    <string name="hello">Hello,</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

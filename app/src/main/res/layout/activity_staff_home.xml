@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCFC"
+    tools:context=".Staff_home">
+
+    <!-- Toolbar with title and menu icon -->
+
+    <!-- ScrollView containing the functionalities -->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#d32f2f"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="52dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Staff Home"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/staff_menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="Menu"
+                android:padding="10dp"
+                android:src="@drawable/baseline_menu_24" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="360dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Pair 1: Image and Button for In/Out Timings -->
+
+            <!-- Pair 2: Image and Button for Mess Attendance -->
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="139dp"
+                android:layout_height="114dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="In/Out Timings Icon"
+                android:src="@drawable/timing" />
+
+
+            <Button
+                android:id="@+id/staff_inoutBtn"
+                android:layout_width="138dp"
+                android:layout_height="74dp"
+                android:layout_alignTop="@id/image1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@id/image1"
+                android:backgroundTint="#d32f2f"
+                android:text="In/Out Timings"
+                android:textColor="#FFFCFC"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="128dp"
+                android:layout_height="141dp"
+                android:layout_below="@id/staff_inoutBtn"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Mess Icon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/schadule" />
+
+            <Button
+                android:id="@+id/staff_mess_btn"
+                android:layout_width="138dp"
+                android:layout_height="74dp"
+                android:layout_alignTop="@id/image2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="37dp"
+                android:layout_toEndOf="@id/image2"
+                android:backgroundTint="#d32f2f"
+                android:text="Mess Attendance"
+                android:textColor="#FFFEFE" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

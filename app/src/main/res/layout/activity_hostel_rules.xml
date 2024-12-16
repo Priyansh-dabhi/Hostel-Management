@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hostel_Rules">
+
+    <!-- res/layout/activity_hostel_rules.xml -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#f9f9f9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="monospace"
+                android:paddingBottom="16dp"
+                android:text="Hostel Rules &amp; Regulations"
+                android:textColor="#4A148C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Rules Section -->
+            <TextView
+                android:id="@+id/rule_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Respect Quiet Hours"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_description_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="2dp"
+                android:text="All residents must respect quiet hours from 10:00 PM to 6:00 AM. This is to ensure a comfortable and peaceful environment for all."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Maintain Cleanliness"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/rule_description_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="2dp"
+                android:text="Please keep your rooms, bathrooms, and common areas clean. Dispose of garbage in designated areas only."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. No Smoking or Alcohol"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/rule_description_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="4dp"
+                android:text="Smoking and consumption of alcohol are strictly prohibited in the hostel premises. Violation may lead to disciplinary action."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Curfew Timings"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/rule_description_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="2dp"
+                android:text="All residents must return to the hostel by 10:00 PM. Late arrivals are not permitted unless prior permission is granted."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_title_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Visitor Policy"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/rule_description_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="2dp"
+                android:text="Visitors are allowed only during designated hours and must register at the front desk. No visitors are allowed in rooms."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_title_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Respect for Property"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/rule_description_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="4dp"
+                android:text="All residents are responsible for maintaining hostel property. Any damage must be reported, and repairs or replacements may be charged."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule_title_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Emergency Protocols"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/rule_description_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="4dp"
+                android:text="In case of emergency, follow the designated exit routes and emergency protocols as displayed in each room and hallway."
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Add more rules if necessary -->
+
+            <!-- Footer -->
+            <TextView
+                android:id="@+id/footer_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                android:paddingBottom="1dp"
+                android:text="Please follow all rules and regulations to ensure a safe and comfortable stay for everyone."
+                android:textColor="#332E2E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
